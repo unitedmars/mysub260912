@@ -5,17 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 31.58.181.88
-  port: 8443
+  server: 130.49.161.70
+  port: 443
   udp: true
-  type: vless
-  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 31.56.189.27
   port: 2087
@@ -30,30 +28,39 @@ proxies:
   grpc-opts:
     grpc-service-name: freegrpc
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 130.49.161.70
-  port: 443
+  server: 89.47.55.8
+  port: 8443
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  type: vless
+  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  tls: true
+  reality-opts:
+    public-key: WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 85.204.107.183
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: fa34a94b-f304-4290-bd94-a83cc2ce21be
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: edge
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 188.208.110.58
-  port: 8444
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: tunnel-astrovpn_official
 proxy-groups:
 - name: PROXIES
   type: select
