@@ -16,7 +16,7 @@ proxies:
     public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
     short-id: 0a9bd9db19578964
   servername: www.tesla.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
   server: 38.60.168.98
   port: 2087

@@ -19,18 +19,12 @@ proxies:
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
-  server: 88.119.176.24
-  port: 443
+  server: 195.238.126.20
+  port: 9001
   udp: true
-  type: vless
-  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: lit9.helper-internet.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
 proxy-groups:
 - name: PROXIES
   type: select
