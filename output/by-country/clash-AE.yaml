@@ -5,15 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 130.49.161.70
-  port: 443
+  server: 31.58.181.88
+  port: 8443
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  type: vless
+  uuid: 05819bb1-2975-473c-a51f-0fbccf8d2cfa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 31.56.189.27
   port: 2087
@@ -28,39 +30,61 @@ proxies:
   grpc-opts:
     grpc-service-name: freegrpc
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 89.47.55.8
-  port: 8443
+  server: 130.49.161.70
+  port: 443
   udp: true
-  type: vless
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
-  tls: true
-  reality-opts:
-    public-key: WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 31.58.181.88
-  port: 8443
-  udp: true
-  type: vless
-  uuid: fa34a94b-f304-4290-bd94-a83cc2ce21be
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: edge
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 85.204.107.178
+  server: 85.204.107.183
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  server: upload.tbotapi.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
+  servername: upload.tbotapi.ru
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+  server: 175.41.179.37
+  port: 51262
+  udp: true
+  type: vless
+  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +95,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,5 +107,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
 rules:
 - MATCH,PROXIES
