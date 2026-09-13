@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: c4783cc5-aeec-4473-855b-1c98965949dd
+  uuid: af674f24-71f7-4683-9e8e-370ec70cffc4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -17,7 +17,7 @@ proxies:
   servername: tradingview.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  server: 31.56.189.27
+  server: srv-21bac9.vless.monster
   port: 2087
   udp: true
   type: vless
@@ -25,7 +25,6 @@ proxies:
   tls: true
   servername: srv-21bac9.vless.monster
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
@@ -40,7 +39,7 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 85.204.107.173
+  server: 85.204.107.172
   port: 8080
   udp: true
   type: hysteria2
@@ -48,7 +47,7 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless

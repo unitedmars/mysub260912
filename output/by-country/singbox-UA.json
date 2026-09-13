@@ -4,29 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇮🇷 IR 01 - xiaohe",
-      "server": "167.82.76.7",
-      "server_port": 443,
-      "password": "MiTiVPN",
+      "type": "vless",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
+      "server": "89.47.55.9",
+      "server_port": 8443,
+      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "www.sony.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TWaatavWGcWV-E7c4AXmBXypLKJzm6eR3FGG61spayQ",
+          "short_id": ""
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "@mehrosaboran",
-        "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net"
-        }
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
@@ -34,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

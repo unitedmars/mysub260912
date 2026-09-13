@@ -18,7 +18,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 8443
   udp: true
   type: vless
@@ -26,7 +26,6 @@ proxies:
   tls: true
   servername: neth9.lunariai.ru
   skip-cert-verify: false
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
