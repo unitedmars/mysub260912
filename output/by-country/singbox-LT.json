@@ -6,7 +6,28 @@
     {
       "type": "vless",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-      "server": "84.32.215.117",
+      "server": "181.214.147.216",
+      "server_port": 443,
+      "uuid": "8e403675-d020-4801-9520-9cba4bbfda0e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lith.2clash.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "66DIn_CbsE4-fWeWpy3vrRLP-XN8D-axun3jbZzuPmk",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
+      "server": "lt.aether-runet.top",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
@@ -15,7 +36,7 @@
         "server_name": "lt.aether-runet.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

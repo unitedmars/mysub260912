@@ -23,7 +23,7 @@ proxies:
   udp: true
   type: hysteria2
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  sni: speedtestmark.com
+  sni: 104.165.205.42
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
