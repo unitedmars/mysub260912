@@ -23,20 +23,17 @@ proxies:
     public-key: kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss
     short-id: b9f8d3f8
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
-  server: 188.114.97.6
-  port: 2052
+  server: 134.195.196.211
+  port: 18000
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
-  server: 138.197.141.58
+  server: 137.184.174.93
   port: 8080
   udp: true
   type: ss
@@ -53,21 +50,8 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
     short-id: 83f8317a948bb769
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
-  server: 158.69.112.254
-  port: 443
-  udp: true
-  type: vless
-  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
-    short-id: 3d3c1e645f763ee3
-  servername: www.speedtest.net
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 07 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
   server: 130.107.73.148
   port: 41373
   udp: true
@@ -80,14 +64,34 @@ proxies:
     short-id: 0e
   servername: google.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 08 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 07 - xiaohe
   server: 149.22.95.183
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
+- name: 🇨🇦 加拿大 (Canada) 08 - xiaohe
+  server: 138.197.141.58
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇨🇦 加拿大 (Canada) 09 - xiaohe
+  server: 209.200.246.148
+  port: 443
+  udp: true
+  type: vless
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 10 - xiaohe
   server: 66.70.179.124
   port: 443
   udp: true
@@ -100,15 +104,29 @@ proxies:
     short-id: af7e79b5
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 10 - xiaohe
-  server: 134.195.196.211
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 11 - xiaohe
+  server: 158.69.112.254
+  port: 443
+  udp: true
+  type: vless
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 12 - xiaohe
+  server: 184.107.106.68
+  port: 443
+  udp: true
+  type: vless
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  tls: true
+  servername: lizca2.footballfantasyforum.com
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 13 - xiaohe
   server: 23.162.200.198
   port: 18000
   udp: true
@@ -132,6 +150,8 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 09 - xiaohe
   - 🇨🇦 加拿大 (Canada) 10 - xiaohe
   - 🇨🇦 加拿大 (Canada) 11 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 12 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -148,5 +168,7 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 09 - xiaohe
   - 🇨🇦 加拿大 (Canada) 10 - xiaohe
   - 🇨🇦 加拿大 (Canada) 11 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 12 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 13 - xiaohe
 rules:
 - MATCH,PROXIES
