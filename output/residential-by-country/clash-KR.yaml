@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
-  server: lt.aether-runet.top
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  server: hg.zhujue.us
+  port: 11000
   udp: true
   type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  uuid: 0e46345c-f33b-4f9b-b8ec-90e7c986af7e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
-    short-id: 4fa44664f6a566d3
-  servername: lt.aether-runet.top
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+  servername: s0.awsstatic.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  server: 31.56.189.27
+  port: 2087
+  udp: true
+  type: vless
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  tls: true
+  servername: srv-21bac9.vless.monster
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: freegrpc
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 31.58.181.88
   port: 8443
   udp: true
@@ -16,29 +29,7 @@ proxies:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: srv-21bac9.vless.monster
-  port: 2087
-  udp: true
-  type: vless
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-  tls: true
-  servername: srv-21bac9.vless.monster
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   server: 89.47.55.8
   port: 8443
   udp: true
@@ -52,21 +43,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 85.121.50.16
-  port: 443
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  server: 85.204.107.181
+  port: 8080
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /friends/go.php?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -77,14 +62,28 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: 188.208.110.238
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0c597b0d-99d7-4c27-befe-6c5d339d7dbe
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
+  servername: baeb.edge-static.space
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  server: 85.204.107.173
-  port: 8080
+  server: 130.49.161.70
+  port: 443
   udp: true
   type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
   skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 proxy-groups:
 - name: PROXIES
   type: select
