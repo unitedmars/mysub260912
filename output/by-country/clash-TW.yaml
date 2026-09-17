@@ -5,35 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  server: 104.199.219.172
-  port: 40800
-  udp: true
-  type: vless
-  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
-    short-id: 186e4c2732d61a3d
-  servername: www.intel.com
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
+  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: 35.201.230.136
   port: 443
   udp: true
@@ -45,7 +24,28 @@ proxies:
     public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
     short-id: 5e13a6d43d0644c9
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  server: 104.199.134.231
+  port: 28364
+  udp: true
+  type: vless
+  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
+    short-id: 7241c359c2dfab
+  servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  server: 85.237.207.49
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: a56619e2bed91121eabb97d20be207c3
+  sni: 85-237-207-49.liao.kdns.fr
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
