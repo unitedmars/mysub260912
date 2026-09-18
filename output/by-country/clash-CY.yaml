@@ -18,44 +18,6 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  server: 194.76.154.31
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
-  tls: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-    short-id: a8ae
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  server: 5.253.42.163
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  servername: deepl.com
-  client-fingerprint: edge
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
-  server: 5.253.28.218
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
   server: 194.76.155.80
   port: 40443
   udp: true
@@ -68,6 +30,44 @@ proxies:
     short-id: e496c7fe1cefc9ff
   servername: deepl.com
   client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  server: 194.76.154.31
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  tls: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
+  server: preview.netraidly.ru
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
+  server: 5.253.30.99
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
   server: hydra.yokkastars.com
   port: 2443
