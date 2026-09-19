@@ -30,7 +30,7 @@ proxies:
     public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
-  client-fingerprint: ''
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
   server: 204.216.216.23
   port: 10086
