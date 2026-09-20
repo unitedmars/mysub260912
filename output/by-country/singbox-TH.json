@@ -18,15 +18,21 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "118.193.57.167",
-      "server_port": 49667,
-      "uuid": "d46bf492-45f4-4c33-82d1-ea2a1cb54eb6",
-      "security": "auto",
+      "server": "23.249.18.144",
+      "server_port": 8581,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/d46bf492"
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
       }
     },
     {
@@ -40,7 +46,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
