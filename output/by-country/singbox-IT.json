@@ -4,20 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇮🇹 意大利 (Italy) 01 - xiaohe",
+      "server": "89.41.172.106",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 02 - xiaohe",
       "server": "57.131.48.45",
       "server_port": 8388,
       "method": "aes-256-gcm",
       "password": "itzvpn@321"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇹 意大利 (Italy) 02 - xiaohe",
-      "server": "89.41.172.85",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
     },
     {
       "type": "vless",
@@ -27,22 +27,58 @@
       "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇮🇹 意大利 (Italy) 04 - xiaohe",
-      "server": "140.248.189.57",
-      "server_port": 80,
-      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "tazia.global.ssl.fastly.net"
+      "server": "89.41.172.85",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 05 - xiaohe",
+      "server": "31.77.201.33",
+      "server_port": 443,
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "italia.superbuba.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
+          "short_id": "4fa44664f6a566d3"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 05 - xiaohe",
+      "tag": "🇮🇹 意大利 (Italy) 06 - xiaohe",
+      "server": "31.76.113.231",
+      "server_port": 443,
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "italia.superbuba.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
+          "short_id": "4fa44664f6a566d3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 07 - xiaohe",
       "server": "82.118.16.187",
       "server_port": 443,
       "uuid": "dc2259c4-388e-4285-ba18-df619b6672b6",
@@ -63,8 +99,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 06 - xiaohe",
-      "server": "31.77.201.33",
+      "tag": "🇮🇹 意大利 (Italy) 08 - xiaohe",
+      "server": "31.76.113.212",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
@@ -83,14 +119,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇹 意大利 (Italy) 07 - xiaohe",
-      "server": "89.41.172.106",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -101,7 +129,8 @@
         "🇮🇹 意大利 (Italy) 04 - xiaohe",
         "🇮🇹 意大利 (Italy) 05 - xiaohe",
         "🇮🇹 意大利 (Italy) 06 - xiaohe",
-        "🇮🇹 意大利 (Italy) 07 - xiaohe"
+        "🇮🇹 意大利 (Italy) 07 - xiaohe",
+        "🇮🇹 意大利 (Italy) 08 - xiaohe"
       ]
     },
     {
@@ -114,7 +143,8 @@
         "🇮🇹 意大利 (Italy) 04 - xiaohe",
         "🇮🇹 意大利 (Italy) 05 - xiaohe",
         "🇮🇹 意大利 (Italy) 06 - xiaohe",
-        "🇮🇹 意大利 (Italy) 07 - xiaohe"
+        "🇮🇹 意大利 (Italy) 07 - xiaohe",
+        "🇮🇹 意大利 (Italy) 08 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
