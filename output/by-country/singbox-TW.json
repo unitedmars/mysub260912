@@ -11,28 +11,16 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "103.115.109.49",
+        "server_name": "160.187.100.109",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
-      "server": "104.199.134.231",
-      "server_port": 28364,
-      "uuid": "3a62a0c2-ba80-43a9-b757-9aca88b0552e",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+      "server": "35.201.163.218",
+      "server_port": 30837,
+      "uuid": "85a6bd94-83a9-4e80-849f-c06d7011d1a4",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -43,9 +31,21 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I",
-          "short_id": "7241c359c2dfab"
+          "public_key": "LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo",
+          "short_id": "97101ba788915e5a"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "103.115.109.49",
+        "insecure": true
       }
     },
     {
@@ -79,7 +79,7 @@
         "server_name": "www.amd.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
