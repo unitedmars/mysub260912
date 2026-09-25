@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe",
-      "server": "104.24.143.217",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.18.14.103",
       "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-4eef5adc237a",
+      "uuid": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
       "tls": {
         "enabled": true,
-        "server_name": "r5zenrelur2s.pqzdileiu8es.workers.dev",
+        "server_name": "server9.9966338.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/stream/PANEL_ZEUS/4eef5adc237a/loc-1",
+        "path": "/imnotarealherox",
         "headers": {
-          "Host": "r5zenrelur2s.pqzdileiu8es.workers.dev"
+          "Host": "server9.9966338.xyz"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
