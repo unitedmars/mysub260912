@@ -13,13 +13,9 @@
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
         "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -34,7 +30,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -48,18 +44,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-      "server": "94.183.170.135",
-      "server_port": 443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
       "server": "217.60.182.79",
       "server_port": 443,
       "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
@@ -76,8 +62,7 @@
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
       ]
     },
     {
@@ -86,8 +71,7 @@
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
