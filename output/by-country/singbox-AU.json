@@ -6,8 +6,8 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "194.195.123.60",
-      "server_port": 22368,
+      "server": "143.42.46.37",
+      "server_port": 25605,
       "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -15,12 +15,12 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "JJsjBS60tj6uZp-x2tMJ_ioblXRcru_apACEkMJYnBM",
-          "short_id": "b5a3"
+          "public_key": "trh3vhKtu_iAKb6E2GuUvloJDZ8tN0jtzyj4kpV5IQA",
+          "short_id": "6df42a2c"
         }
       }
     },
@@ -48,8 +48,8 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "143.42.46.37",
-      "server_port": 25605,
+      "server": "194.195.123.60",
+      "server_port": 22368,
       "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -57,12 +57,12 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "trh3vhKtu_iAKb6E2GuUvloJDZ8tN0jtzyj4kpV5IQA",
-          "short_id": "6df42a2c"
+          "public_key": "JJsjBS60tj6uZp-x2tMJ_ioblXRcru_apACEkMJYnBM",
+          "short_id": "b5a3"
         }
       }
     },
