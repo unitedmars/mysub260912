@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  server: 108.162.198.178
+  server: 162.159.43.187
   port: 80
   udp: true
   type: vless
