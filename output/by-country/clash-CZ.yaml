@@ -5,23 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 153.76.185.102
-  port: 3090
+  server: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
+  port: 2053
   udp: true
   type: vless
-  uuid: cbbc93ef-6d35-463a-a856-64265c42e66d
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
+  tls: true
+  servername: RESTlESs-MoON-dD68RidaM-tOo-In-MAmLEkat.hGtghFF67tdFHUt3.WORkerS.DEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 194.87.59.26
-  port: 2085
+  server: 162.159.152.4
+  port: 443
   udp: true
   type: vless
-  uuid: cbbc93ef-6d35-463a-a856-64265c42e66d
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rayan-007.maxima.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,23 +6,51 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "153.76.185.102",
-      "server_port": 3090,
-      "uuid": "cbbc93ef-6d35-463a-a856-64265c42e66d",
+      "server": "restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev",
+      "server_port": 2053,
+      "uuid": "dc1e9f00-c064-4870-9bfc-463db50257d7",
+      "tls": {
+        "enabled": true,
+        "server_name": "RESTlESs-MoON-dD68RidaM-tOo-In-MAmLEkat.hGtghFF67tdFHUt3.WORkerS.DEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "194.87.59.26",
-      "server_port": 2085,
-      "uuid": "cbbc93ef-6d35-463a-a856-64265c42e66d",
+      "server": "162.159.152.4",
+      "server_port": 443,
+      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
+      "tls": {
+        "enabled": true,
+        "server_name": "rayan-007.maxima.dpdns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "headers": {
+          "Host": "rayan-007.maxima.dpdns.org"
+        }
       }
     },
     {
