@@ -18,17 +18,20 @@ proxies:
   servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: sw-01.vacvps.com
-  port: 443
+  server: 62.60.159.81
+  port: 2053
   udp: true
   type: vless
-  uuid: 84a3061b-3573-4a3c-a631-f26c31209268
-  flow: xtls-rprx-vision
+  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
   tls: true
   reality-opts:
-    public-key: bDAry75taTMaPJII9vRrJuXAjQglTJxCOVWraQ5BozY
-  servername: sw-01.vacvps.com
-  client-fingerprint: firefox
+    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
+    short-id: d0ea1847066af5a6
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpce5bb9e71
 proxy-groups:
 - name: PROXIES
   type: select
