@@ -4,28 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  server: 199.232.78.170
+- name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  server: aksai.org
   port: 443
   udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: aksai.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: '@mehrosabiran'
+    path: /linkvws
+    headers:
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "85.192.48.142",
+      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
+      "server": "35.240.62.249",
       "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-      "flow": "xtls-rprx-vision",
+      "uuid": "6d341f6e-7b9d-4ae3-999b-00333de7bdfb",
       "tls": {
         "enabled": true,
-        "server_name": "nvidia.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
+          "public_key": "v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws",
+          "short_id": "31f187650d9530bb"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
