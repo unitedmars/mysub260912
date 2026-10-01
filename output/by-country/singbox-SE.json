@@ -4,24 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "34.51.187.118",
+      "server": "51.20.96.231",
       "server_port": 443,
-      "uuid": "e4be912f-68e8-4d51-80a4-1342b646f8e0",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg",
-          "short_id": "79ff7d51e3c56323"
-        }
-      }
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "vless",
@@ -34,7 +22,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
