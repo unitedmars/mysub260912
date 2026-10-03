@@ -4,21 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "tuic",
+      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-      "server": "tw6.dexlos.com",
-      "server_port": 8080,
-      "uuid": "D7286728-678E-443B-B76B-B699654C66DD",
-      "password": "D7286728-678E-443B-B76B-B699654C66DD",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
         "enabled": true,
-        "server_name": "tw6.dexlos.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
       }
     },
     {

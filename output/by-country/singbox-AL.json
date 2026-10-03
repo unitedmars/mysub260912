@@ -4,26 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe",
-      "server": "149.104.107.41",
-      "server_port": 8090,
-      "method": "aes-256-gcm",
-      "password": "PCnnH6SQSnfoS27"
+      "type": "vless",
+      "tag": "🇦🇱 AL 01 - xiaohe",
+      "server": "lv1.rovilo.ir",
+      "server_port": 2095,
+      "uuid": "452f869f-7720-47c3-a175-b6673e31d3e8",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/",
+        "host": "connectivitycheck.android.com"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe"
+        "🇦🇱 AL 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe"
+        "🇦🇱 AL 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
