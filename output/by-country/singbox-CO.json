@@ -4,28 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
-      "server": "cloud.ghostdev.lk",
-      "server_port": 80,
-      "uuid": "1eaed465-d720-400b-9f9f-439600a2d093",
-      "transport": {
-        "type": "ws"
-      }
+      "type": "shadowsocks",
+      "tag": "🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe",
+      "server": "149.104.107.41",
+      "server_port": 8090,
+      "method": "aes-256-gcm",
+      "password": "PCnnH6SQSnfoS27"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
