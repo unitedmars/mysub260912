@@ -15,7 +15,7 @@ proxies:
   servername: bigdick.gamegrow.ru
   skip-cert-verify: false
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: 104.20.36.205
+  server: 45.192.201.140
   port: 443
   udp: true
   type: vless
@@ -28,21 +28,6 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 47ba5dc6-8961-48a0-8b54-f57ec524627a
-  tls: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
