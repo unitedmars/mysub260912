@@ -5,22 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 77.74.123.104
+  server: 162.249.126.37
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  server: 77.74.123.101
   port: 8443
   udp: true
   type: hysteria2
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 103.126.51.46
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  server: 103.126.51.51
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: ocober-romania-new.yyuyy.com
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   server: 162.249.125.133
   port: 443
   udp: true
@@ -30,33 +38,35 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  server: 193.163.203.253
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  server: 77.74.123.106
+  port: 4443
+  udp: true
+  type: trojan
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-test-italy.dynuddns.net
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
+  server: 109.104.106.149
   port: 443
   udp: true
   type: vless
-  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
-    short-id: 5ee019e02e6ed99a
-  servername: yandex.ru
+    public-key: a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw
+    short-id: 87709fed663228e5
+  servername: d3-ro.cloud-cdn.xyz
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  server: 85.90.196.11
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
+  server: 185.156.44.99
   port: 443
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +77,8 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,5 +89,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
 rules:
 - MATCH,PROXIES
