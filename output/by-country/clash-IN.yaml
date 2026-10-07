@@ -16,21 +16,17 @@ proxies:
   ws-opts:
     path: /
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 185.67.125.90
-  port: 443
+  server: 194.61.31.126
+  port: 2053
   udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   tls: true
-  servername: aksai.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
