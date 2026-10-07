@@ -4,12 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "149.88.23.202",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "vpn-au-001.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-au-001.fastervpn.world",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
