@@ -16,7 +16,7 @@ proxies:
     public-key: cceRo0o9bFMlCNVahZCrQWRzMAsR5M6abWXADIapY0w
     short-id: 15bcc0a77c3cacdf
   servername: be-root.sworkingvpn.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
