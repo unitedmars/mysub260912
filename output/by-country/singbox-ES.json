@@ -4,24 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-      "server": "83.147.18.3",
-      "server_port": 443,
-      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
-      "flow": "xtls-rprx-vision",
+      "server": "185.174.137.172",
+      "server_port": 8446,
+      "password": "e9dc02d400b67c727aca1620",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
-          "short_id": "fd8cf7e1173f0edb"
-        }
+        "server_name": "185.174.137.172",
+        "insecure": true
       }
     },
     {
@@ -47,30 +38,32 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-      "server": "138.124.62.158",
-      "server_port": 443,
-      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-      "flow": "xtls-rprx-vision",
+      "server": "185.220.249.44",
+      "server_port": 2053,
+      "uuid": "6d1590ed-4c0f-4bbc-931d-2431737615dd",
       "tls": {
         "enabled": true,
-        "server_name": "es-root.sworkingvpn.com",
+        "server_name": "185.220.249.44",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-          "short_id": "15bcc0a77c3cacdf"
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-cdn1-vless",
+        "headers": {
+          "Host": "es.fastmirror-labs.xyz"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-      "server": "46.28.71.247",
+      "server": "83.147.18.3",
       "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -81,8 +74,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
+          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
+          "short_id": "fd8cf7e1173f0edb"
         }
       }
     },
