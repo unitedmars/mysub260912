@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
+      "server": "edge.cloudtechone.org",
+      "server_port": 443,
+      "uuid": "5036de9b-1a18-40e2-97f6-9cbb4a4753e4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "edge.cloudtechone.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo",
+          "short_id": "f93c9d5127e622e4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
       "server": "193.233.74.6",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -28,20 +49,27 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-      "server": "194.87.196.107",
-      "server_port": 40440,
-      "method": "aes-256-gcm",
-      "password": "4938e975724d0ed1"
-    },
-    {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04="
+      "server": "194.226.121.119",
+      "server_port": 443,
+      "uuid": "ec6f8131-7a5d-4117-9627-6fb2b39ae0da",
+      "tls": {
+        "enabled": true,
+        "server_name": "drive.korroh.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/remote.php/dav/89f7661a0011ce46",
+        "headers": {
+          "Host": "drive.korroh.com"
+        }
+      }
     },
     {
       "type": "selector",
