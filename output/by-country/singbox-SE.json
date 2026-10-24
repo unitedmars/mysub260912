@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "111.90.143.184",
-      "server_port": 61111,
-      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+      "server": "89.22.224.146",
+      "server_port": 43788,
+      "uuid": "6fbd9bd1-ccd4-4e2f-a918-a0f871965763",
       "tls": {
         "enabled": true,
-        "server_name": "github.com",
+        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU",
-          "short_id": "1378f725da558887"
         }
       },
       "transport": {
-        "type": "grpc"
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+        }
       }
     },
     {
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
