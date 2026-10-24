@@ -13,8 +13,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 178.172.227.124
 - name: 🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe
   server: 95.128.71.79
   port: 14430
