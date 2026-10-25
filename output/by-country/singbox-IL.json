@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 01 - xiaohe",
-      "server": "45.130.125.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime58.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
       "server": "185.95.231.156",
       "server_port": 443,
       "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
@@ -40,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 03 - xiaohe",
+      "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
       "server": "77.91.69.169",
       "server_port": 19226,
       "uuid": "f0b144bd-4c44-440d-b630-d79ec82cad3a",
@@ -61,7 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 04 - xiaohe",
+      "tag": "🇮🇱 以色列 (Israel) 03 - xiaohe",
       "server": "177.3.208.65",
       "server_port": 443,
       "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
@@ -89,8 +75,7 @@
         "auto",
         "🇮🇱 以色列 (Israel) 01 - xiaohe",
         "🇮🇱 以色列 (Israel) 02 - xiaohe",
-        "🇮🇱 以色列 (Israel) 03 - xiaohe",
-        "🇮🇱 以色列 (Israel) 04 - xiaohe"
+        "🇮🇱 以色列 (Israel) 03 - xiaohe"
       ]
     },
     {
@@ -99,8 +84,7 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - xiaohe",
         "🇮🇱 以色列 (Israel) 02 - xiaohe",
-        "🇮🇱 以色列 (Israel) 03 - xiaohe",
-        "🇮🇱 以色列 (Israel) 04 - xiaohe"
+        "🇮🇱 以色列 (Israel) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
