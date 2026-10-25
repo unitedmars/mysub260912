@@ -6,6 +6,20 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 01 - xiaohe",
+      "server": "45.130.125.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime58.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
       "server": "185.95.231.156",
       "server_port": 443,
       "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
@@ -25,16 +39,29 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
-      "server": "31.57.185.124",
-      "server_port": 41957,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "aJzB4p6wYQF+OEbPk2VmV3JvdFo/K4YVuBqjBEmkf+o=:fzmWR6oEtp740EsWBupO/siQ7E/XBZ5ZWJYweJgm420="
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 03 - xiaohe",
+      "server": "77.91.69.169",
+      "server_port": 19226,
+      "uuid": "f0b144bd-4c44-440d-b630-d79ec82cad3a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk",
+          "short_id": "7c"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 03 - xiaohe",
+      "tag": "🇮🇱 以色列 (Israel) 04 - xiaohe",
       "server": "177.3.208.65",
       "server_port": 443,
       "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
@@ -52,27 +79,6 @@
         "path": "/vless-il",
         "headers": {
           "Host": "tgmansion.site"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 04 - xiaohe",
-      "server": "77.91.69.169",
-      "server_port": 19226,
-      "uuid": "f0b144bd-4c44-440d-b630-d79ec82cad3a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk",
-          "short_id": "7c"
         }
       }
     },

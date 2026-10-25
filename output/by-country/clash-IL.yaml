@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇱 以色列 (Israel) 01 - xiaohe
+  server: 45.130.125.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime58.workers.dev
+- name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   server: 185.95.231.156
   port: 443
   udp: true
@@ -17,14 +28,20 @@ proxies:
     short-id: a3a578ab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇱 以色列 (Israel) 02 - xiaohe
-  server: 31.57.185.124
-  port: 41957
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: aJzB4p6wYQF+OEbPk2VmV3JvdFo/K4YVuBqjBEmkf+o=:fzmWR6oEtp740EsWBupO/siQ7E/XBZ5ZWJYweJgm420=
 - name: 🇮🇱 以色列 (Israel) 03 - xiaohe
+  server: 77.91.69.169
+  port: 19226
+  udp: true
+  type: vless
+  uuid: f0b144bd-4c44-440d-b630-d79ec82cad3a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk
+    short-id: 7c
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇮🇱 以色列 (Israel) 04 - xiaohe
   server: 177.3.208.65
   port: 443
   udp: true
@@ -39,19 +56,6 @@ proxies:
     path: /vless-il
     headers:
       Host: tgmansion.site
-- name: 🇮🇱 以色列 (Israel) 04 - xiaohe
-  server: 77.91.69.169
-  port: 19226
-  udp: true
-  type: vless
-  uuid: f0b144bd-4c44-440d-b630-d79ec82cad3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk
-    short-id: 7c
-  servername: yahoo.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

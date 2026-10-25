@@ -24,12 +24,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+      "server": "178.83.110.32",
+      "server_port": 7443,
+      "uuid": "9bb71136-2380-4b6a-97be-1d4ba11d5a55",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 02 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe"
       ]
     },
     {
@@ -37,7 +61,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 02 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
