@@ -14,30 +14,30 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-      "server": "au5.pad-sservice.lat",
+      "server": "152.53.1.40",
       "server_port": 8443,
       "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
       "tls": {
         "enabled": true,
-        "server_name": "au5.pad-sservice.lat",
+        "server_name": "au4.pad-sservice.lat",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/AU5W",
+        "path": "/A14U",
         "headers": {
-          "Host": "au5.pad-sservice.lat"
+          "Host": "au4.pad-service.com"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-      "server": "62.83.41.69",
+      "server": "au6.pad-sservice.lat",
       "server_port": 8443,
       "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
       "tls": {
@@ -56,17 +56,39 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 04 - xiaohe",
-      "server": "89.58.20.210",
+      "server": "au7.pad-sservice.lat",
+      "server_port": 8443,
+      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "au7.pad-sservice.lat",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/AU7W",
+        "headers": {
+          "Host": "au7.pad-sservice.lat"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 05 - xiaohe",
+      "server": "au2.pad-sservice.lat",
       "server_port": 8443,
       "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
       "tls": {
         "enabled": true,
         "server_name": "au2.pad-sservice.lat",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -84,7 +106,8 @@
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
         "🇦🇹 奥地利 (Austria) 02 - xiaohe",
         "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 04 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 04 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 05 - xiaohe"
       ]
     },
     {
@@ -94,7 +117,8 @@
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
         "🇦🇹 奥地利 (Austria) 02 - xiaohe",
         "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 04 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 04 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
