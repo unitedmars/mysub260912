@@ -5,7 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: 194.76.147.34
+  server: 171.22.119.74
+  port: 8447
+  udp: true
+  type: vless
+  uuid: 6aed42ba-cd2d-4671-87d9-c949b6876888
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  server: hys-eu.letsconnectpoint.com
   port: 443
   udp: true
   type: hysteria2
@@ -18,11 +24,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
 rules:
 - MATCH,PROXIES
