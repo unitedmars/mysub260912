@@ -4,9 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "tr2.tv-quoralyx.top",
+      "server": "206.1.103.237",
+      "server_port": 19999,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "1/kU1gF9gGRGdF5JH2jf3GeeLsItfkkOhmMP5cnPMUI=:ojXUsKiyV41J4EsaiAZFaKCW+zhuD3Tl0Z7pWkKq6eM="
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+      "server": "78.135.73.168",
       "server_port": 443,
       "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
       "flow": "xtls-rprx-vision",
@@ -25,12 +33,25 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "location8.cpanel-host10.ir",
-      "server_port": 56134,
-      "method": "chacha20-ietf-poly1305",
-      "password": "uvKNudV-N8AUCrykPiyznA"
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
+      "server": "93.180.132.104",
+      "server_port": 443,
+      "uuid": "ef328563-cda1-4530-9b0a-988cc5a74d78",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "flooraccount.net",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
     },
     {
       "type": "selector",
@@ -38,7 +59,8 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 03 - xiaohe"
       ]
     },
     {
@@ -46,7 +68,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
