@@ -15,20 +15,8 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 147.45.46.157
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 75985152-e16e-4a48-87ff-35c2615e0ab5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -42,27 +30,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 45.9.12.110
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: myIjvlXZS0rm1eg4q2w5WsQBuj80i2rBA0HpRGCUg1w
-    short-id: 86d1efde
-  servername: ru.letsconnectpoint.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: alb.rvpn.app
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hTTg7lwQMzpaF7KXpY3A8w
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 201.24.121.243
   port: 443
   udp: true
@@ -75,19 +43,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: 194.87.143.165
-  port: 8443
-  udp: true
-  type: vless
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  tls: true
-  servername: wsru1.wba-pn.ru
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: xsru2.freeddns.org
   port: 443
   udp: true
@@ -102,6 +58,18 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 147.45.46.157
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 75985152-e16e-4a48-87ff-35c2615e0ab5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,9 +80,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -125,8 +90,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 rules:
 - MATCH,PROXIES
