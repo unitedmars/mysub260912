@@ -13,6 +13,15 @@ proxies:
   sni: connectwithemployerstohireyouridealteam.com
   skip-cert-verify: false
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  server: au001.zestapp778.com
+  port: 35652
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: au001.zestapp778.com
+  skip-cert-verify: false
+- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   server: au.tronsg.com
   port: 443
   udp: true
@@ -27,6 +36,7 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +44,6 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
