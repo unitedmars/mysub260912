@@ -4,22 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-      "server": "216.24.57.225",
-      "server_port": 2083,
-      "uuid": "3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6",
+      "type": "trojan",
+      "tag": "🇨🇱 智利 (Chile) 01 - xiaohe",
+      "server": "64.176.7.205",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "pol.netvia.ir",
+        "server_name": "advanceyouremploymentskillsandcareerdevelopmenthub.com",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wss",
-        "headers": {
-          "Host": "pol.netvia.ir"
-        }
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
