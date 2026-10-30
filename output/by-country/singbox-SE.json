@@ -6,12 +6,12 @@
     {
       "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "50.7.38.243",
+      "server": "192.142.23.46",
       "server_port": 443,
-      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
       "tls": {
         "enabled": true,
-        "server_name": "promo.betust.net",
+        "server_name": "diffoscope.com",
         "insecure": false
       }
     },
@@ -39,12 +39,12 @@
     {
       "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "192.142.23.46",
+      "server": "promo.betust.net",
       "server_port": 443,
-      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
+      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
       "tls": {
         "enabled": true,
-        "server_name": "diffoscope.com",
+        "server_name": "promo.betust.net",
         "insecure": false
       }
     },
