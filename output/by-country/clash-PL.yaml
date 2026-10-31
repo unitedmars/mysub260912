@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: pol.rvpn.app
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 70.34.252.255
   port: 443
   udp: true
@@ -19,32 +12,28 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 31.59.143.147
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 2.26.255.215
   port: 443
   udp: true
   type: vless
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  uuid: 69e41e64-a832-471a-b740-94577ca85520
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Liu35gmIQJtbul5AeCrceJTjsmln4RaqxX6joKlaBjk
-    short-id: ae97223a8f799889
-  servername: pl2.waspnest.space
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 54.37.131.126
-  port: 80
+    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
+    short-id: '50'
+  servername: cloudflare.com
+  client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 2.26.6.1
+  port: 2087
   udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +42,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +50,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 rules:
 - MATCH,PROXIES

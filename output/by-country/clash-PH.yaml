@@ -4,28 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.17.44.17
-  port: 443
+- name: 🇵🇭 菲律宾 (Philippines) 01 - xiaohe
+  server: 130.94.52.157
+  port: 46298
   udp: true
   type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
+  password: 5t6i121em5lkmsmk
+  sni: ph001.zestapp778.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇵🇭 菲律宾 (Philippines) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇵🇭 菲律宾 (Philippines) 01 - xiaohe
 rules:
 - MATCH,PROXIES

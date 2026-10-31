@@ -16,18 +16,19 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: hw3.divarkhaghazi.com.
+  server: 65.109.210.221
   port: 465
   udp: true
   type: vless
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   tls: true
-  servername: hw3.divarkhaghazi.com.
+  servername: hw3.divarkhaghazi.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select
