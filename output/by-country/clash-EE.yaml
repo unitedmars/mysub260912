@@ -4,17 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
-  server: tr2.h1cloud.net
-  port: 25021
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  server: 79.182.39.232
+  port: 25895
   udp: true
   type: vless
-  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
-  flow: xtls-rprx-vision
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   tls: true
   reality-opts:
-    public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
-    short-id: 17fa3af0924c88b3
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
   servername: www.samsung.com
   client-fingerprint: chrome
 proxy-groups:
@@ -22,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
