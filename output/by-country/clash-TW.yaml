@@ -18,16 +18,20 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: 47.129.112.129
-  port: 20000
+  server: n04.jinggai.online
+  port: 8443
   udp: true
-  type: hysteria2
-  password: CQUPACy34t6Tjx8FdQdkCiYW
-  sni: sg-transit-3.nebulacloud.win
-  skip-cert-verify: true
+  type: vless
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  tls: true
+  servername: n04.jinggai.online
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /nvl-n04-ws/e0577fe8fd7c8823
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   server: 684616s4.df6h451rh.xin
   port: 443
