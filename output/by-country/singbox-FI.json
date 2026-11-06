@@ -18,28 +18,23 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "104.24.0.1",
-      "server_port": 2053,
-      "password": "gHQP0D7D15",
+      "server": "6.bmi.ir.asopardaz.ir",
+      "server_port": 8443,
+      "uuid": "fe4d2b3e-965f-4389-a6e4-05887ef5fd2b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "marvdasht.phonecomparisonblog.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "hostgator.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "marvdasht.phonecomparisonblog.org"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
+          "short_id": "e915"
         }
       }
     },

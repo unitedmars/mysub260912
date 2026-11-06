@@ -16,16 +16,18 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 104.24.0.1
-  port: 2053
+  server: 6.bmi.ir.asopardaz.ir
+  port: 8443
   udp: true
-  type: trojan
-  password: gHQP0D7D15
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
+  type: vless
+  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: hostgator.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
