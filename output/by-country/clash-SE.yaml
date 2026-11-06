@@ -16,14 +16,14 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 194.104.94.141
+  server: se3.shtil.io
   port: 443
   udp: true
   type: vless
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   tls: true
   servername: se3.shtil.io
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
