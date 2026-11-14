@@ -4,19 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "177.202.65.158",
-      "server_port": 443,
-      "password": "247802ca-0fbb-428a-b807-91a6e571b5c7",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-fi2.snobvpn.online",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE"
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
       }
     },
     {
@@ -32,12 +30,29 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "server": "177.202.65.158",
+      "server_port": 443,
+      "password": "247802ca-0fbb-428a-b807-91a6e571b5c7",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-fi2.snobvpn.online",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
       ]
     },
     {
@@ -45,7 +60,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
