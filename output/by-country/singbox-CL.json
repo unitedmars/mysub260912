@@ -16,18 +16,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 02 - xiaohe",
+      "server": "147.224.233.249",
+      "server_port": 63690,
+      "uuid": "47637b04-945c-481e-b221-03c32d10c52d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU",
+          "short_id": "1f2519bb96e5589c"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 (Chile) 01 - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - xiaohe",
+        "🇨🇱 智利 (Chile) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 (Chile) 01 - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - xiaohe",
+        "🇨🇱 智利 (Chile) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
