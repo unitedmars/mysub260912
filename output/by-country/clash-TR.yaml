@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   server: 157.254.38.210
-  port: 20027
+  port: 20028
   udp: true
   type: trojan
   password: d7563108-615c-4338-a7bd-77f359869a4a
@@ -14,24 +14,20 @@ proxies:
   skip-cert-verify: false
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 157.254.38.210
-  port: 20028
+  port: 20027
   udp: true
   type: trojan
   password: d7563108-615c-4338-a7bd-77f359869a4a
   sni: hk.catxstar.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 151.241.226.201
-  port: 2053
+  server: tr3.h1cloud.net
+  port: 25515
   udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: random
+  type: hysteria2
+  password: b36a14f8-fc3f-4142-968f-48031cf5f330
+  sni: 2c74e5t.tr3.h1clayd.click
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
