@@ -16,13 +16,17 @@
         "alpn": [
           "h2",
           "http/1.1"
-        ]
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe",
-      "server": "s5.libertyrunet.store",
+      "server": "130.49.163.188",
       "server_port": 443,
       "password": "307ee0e53ea04dfd86a7f2f9fcd53844",
       "tls": {
