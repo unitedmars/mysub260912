@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -31,7 +19,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 212.98.224.35
   port: 443
   udp: true
@@ -44,6 +32,18 @@ proxies:
     short-id: 0e3e4d96
   servername: tr1.gofizzin.com
   client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 185.39.204.117
+  port: 10002
+  udp: true
+  type: vless
+  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
+  tls: true
+  servername: tr2.vpnjantit.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vpnjantit
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: panel.autonetshop.ir
   port: 43345

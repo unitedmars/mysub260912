@@ -6,24 +6,24 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
-      "server": "202.146.222.89",
+      "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.89",
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
-      "server": "202.146.222.174",
+      "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
+        "server_name": "https://t.me/clashv8",
         "insecure": true
       }
     },
@@ -35,7 +35,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2",
+        "server_name": "https://t.me/wangcai2рҹүрҹү",
         "insecure": true
       }
     },
@@ -56,8 +56,16 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe",
+      "server": "213.176.92.148",
+      "server_port": 40647,
+      "method": "aes-256-gcm",
+      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaohe",
       "server": "47.242.93.89",
       "server_port": 12012,
       "password": "12012",
@@ -66,14 +74,6 @@
         "server_name": "ali-hk.b-gfw.cfd",
         "insecure": true
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaohe",
-      "server": "213.176.92.148",
-      "server_port": 40647,
-      "method": "aes-256-gcm",
-      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
     },
     {
       "type": "selector",
