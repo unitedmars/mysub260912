@@ -24,15 +24,17 @@ proxies:
   sni: lakes.blog-forme.ru
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 129.101.100.219
+  server: 107.181.151.128
   port: 443
   udp: true
   type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: 88742d38-3f5c-4b9c-b256-7df5db8257ec
   flow: xtls-rprx-vision
   tls: true
-  servername: db-28.topp-con.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: 8f79726c5002
+  servername: www.mozilla.org
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES

@@ -32,21 +32,21 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "129.101.100.219",
+      "server": "107.181.151.128",
       "server_port": 443,
-      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
+      "uuid": "88742d38-3f5c-4b9c-b256-7df5db8257ec",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "db-28.topp-con.xyz",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
+        "server_name": "www.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
+          "short_id": "8f79726c5002"
         }
       }
     },
