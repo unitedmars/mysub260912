@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 02 - xiaohe
+  server: 8.209.247.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 03 - xiaohe
   server: 168.110.63.247
   port: 8081
   udp: true
@@ -15,23 +31,32 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 03 - xiaohe
+- name: 🇯🇵 日本 (Japan) 04 - xiaohe
   server: 138.3.208.26
   port: 50160
   udp: true
   type: hysteria2
   password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 'off'
+  sni: 138.3.208.26
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 04 - xiaohe
+- name: 🇯🇵 日本 (Japan) 05 - xiaohe
+  server: 45.76.222.108
+  port: 443
+  udp: true
+  type: vless
+  uuid: bd95a04e-e3e1-460e-b89d-e9a693d393e0
+  tls: true
+  reality-opts:
+    public-key: -_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE
+    short-id: b5c85d2d
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 06 - xiaohe
   server: 45.77.8.233
   port: 443
   udp: true
@@ -48,7 +73,7 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 05 - xiaohe
+- name: 🇯🇵 日本 (Japan) 07 - xiaohe
   server: 45.76.106.69
   port: 443
   udp: true
@@ -65,6 +90,35 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  server: 152.69.200.216
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 09 - xiaohe
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 10 - xiaohe
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,6 +129,11 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 03 - xiaohe
   - 🇯🇵 日本 (Japan) 04 - xiaohe
   - 🇯🇵 日本 (Japan) 05 - xiaohe
+  - 🇯🇵 日本 (Japan) 06 - xiaohe
+  - 🇯🇵 日本 (Japan) 07 - xiaohe
+  - 🇯🇵 日本 (Japan) 08 - xiaohe
+  - 🇯🇵 日本 (Japan) 09 - xiaohe
+  - 🇯🇵 日本 (Japan) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,5 +144,10 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 03 - xiaohe
   - 🇯🇵 日本 (Japan) 04 - xiaohe
   - 🇯🇵 日本 (Japan) 05 - xiaohe
+  - 🇯🇵 日本 (Japan) 06 - xiaohe
+  - 🇯🇵 日本 (Japan) 07 - xiaohe
+  - 🇯🇵 日本 (Japan) 08 - xiaohe
+  - 🇯🇵 日本 (Japan) 09 - xiaohe
+  - 🇯🇵 日本 (Japan) 10 - xiaohe
 rules:
 - MATCH,PROXIES

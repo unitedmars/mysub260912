@@ -38,18 +38,7 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-      "server": "95.174.68.188",
-      "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
-      "server": "84.235.244.108",
+      "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
@@ -57,6 +46,32 @@
         "path": "/",
         "headers": {
           "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
+      "server": "r0xnfzk9ud.newwl.pro",
+      "server_port": 443,
+      "uuid": "7955bf18-35c4-412d-aabd-c0b36c793063",
+      "tls": {
+        "enabled": true,
+        "server_name": "r0xnfzk9ud.newwl.pro",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/service/telemetry/045d381f1166/",
+        "headers": {
+          "Host": "r0xnfzk9ud.newwl.pro"
         }
       }
     },

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 195.3.223.125
+  server: 80.47.10.106
   port: 443
   udp: true
   type: vless
@@ -14,33 +14,19 @@ proxies:
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: a7c92e4b10d6f835
-  servername: api-net-ctl.galioncc.com
+  servername: pl8.galioncc.com
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 45.194.66.177
+  server: 179.253.101.162
   port: 443
   udp: true
   type: vless
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
   flow: xtls-rprx-vision
   tls: true
-  servername: 31tawwo0.virtual-network.lol
+  servername: app.streamru17.net
   skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: d4a338t.pl8.h1clayd.click
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0dAUffCns_r-xP3QP1V8qy2P29vBN5ROOoX96TxpvXA
-    short-id: b545243c33282b73
-  servername: d4a338t.pl8.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 54.37.131.126
   port: 80
   udp: true
@@ -61,7 +47,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,6 +55,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
