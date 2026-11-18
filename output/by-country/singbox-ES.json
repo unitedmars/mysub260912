@@ -28,35 +28,56 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-      "server": "66.163.118.166",
+      "server": "185.176.9.26",
+      "server_port": 443,
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "es1.gofizz.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Qxpi1A9yJXwgZ1ycBrasKBCrX3qkRJ646U28a-99WBE",
+          "short_id": "85750bd7"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+      "server": "66.163.118.62",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "learn.discovergreatjobsandadvanceyourcareer.com",
+        "server_name": "courses.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-      "server": "83.147.18.3",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
+      "server": "46.28.71.247",
       "server_port": 443,
-      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
-          "short_id": "fd8cf7e1173f0edb"
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
         }
       }
     },
@@ -69,7 +90,8 @@
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 06 - xiaohe"
       ]
     },
     {
@@ -80,7 +102,8 @@
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

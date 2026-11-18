@@ -18,7 +18,7 @@ proxies:
   servername: apple.com
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 89.221.203.29
+  server: 178.130.46.188
   port: 443
   udp: true
   type: vless
@@ -27,10 +27,21 @@ proxies:
   tls: true
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  servername: ru2-r.bankai.party
+  servername: nl16-r.bankai.party
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 89.223.124.93
+  port: 443
+  udp: true
+  type: vless
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rLkjhzhSAJrey5Qv3624_5B-MpViafV2dDdDCnqn_l4
+  servername: dfgdfgb.wey-land.net
+  client-fingerprint: qq
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 201.24.121.243
   port: 443
   udp: true
@@ -43,8 +54,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 201.24.116.192
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 200.169.179.233
   port: 443
   udp: true
   type: vless
@@ -52,7 +63,7 @@ proxies:
   tls: true
   servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
@@ -65,6 +76,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +86,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
