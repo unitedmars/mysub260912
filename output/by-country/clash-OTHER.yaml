@@ -5,48 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.67.187.219
+  server: 104.18.10.153
   port: 443
   udp: true
   type: vless
-  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
   tls: true
-  servername: ave-qualifications-choices-populations.trycloudflare.com
+  servername: portland-wins-robbie-skirt.trycloudflare.com
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /a8b8606819ef
+    path: /e0843c8ad581
     headers:
-      Host: ave-qualifications-choices-populations.trycloudflare.com
-- name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 172.67.174.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
-  tls: true
-  servername: ave-qualifications-choices-populations.trycloudflare.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /a8b8606819ef
-    headers:
-      Host: ave-qualifications-choices-populations.trycloudflare.com
+      Host: portland-wins-robbie-skirt.trycloudflare.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
-  - 🌐 其他地区 (Other) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
-  - 🌐 其他地区 (Other) 02 - xiaohe
 rules:
 - MATCH,PROXIES
