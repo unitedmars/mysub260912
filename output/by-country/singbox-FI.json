@@ -4,28 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "94.183.164.119",
-      "server_port": 24433,
-      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+      "server": "196.196.204.148",
+      "server_port": 443,
+      "uuid": "63aa95e5-3b36-4e53-a86f-7df59652e994",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "lakes.blog-forme.ru",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
+        "server_name": "4c980ft.fi15.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-ZN1kT3JlPFxu1E906JRqLAGoQQucSmL6xPiuAyasTk",
+          "short_id": "597e1c279d224774"
         }
       }
     },
@@ -34,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

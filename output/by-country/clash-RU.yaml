@@ -18,14 +18,6 @@ proxies:
   servername: apple.com
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 103.88.243.142
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 201.24.121.243
   port: 443
   udp: true
@@ -38,20 +30,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 201.24.116.192
-  port: 443
-  udp: true
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 200.169.179.233
   port: 443
   udp: true
@@ -64,21 +43,41 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 147.45.175.81
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 103.88.243.142
+  port: 11592
+  udp: true
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: xsru1.ddnsfree.com
   port: 443
   udp: true
   type: vless
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   tls: true
-  servername: xsru2.freeddns.org
+  servername: xsru1.ddnsfree.com
   skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 78.159.245.147
+  port: 445
+  udp: true
+  type: vless
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  tls: true
+  reality-opts:
+    public-key: VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA
+  servername: passport.yandex.ru
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru2.freeddns.org
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
