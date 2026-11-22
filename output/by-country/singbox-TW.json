@@ -23,8 +23,23 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2",
+        "server_name": "103.115.109.49",
         "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+      "server": "162.19.192.89",
+      "server_port": 16616,
+      "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com"
+        }
       }
     },
     {
@@ -33,7 +48,8 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe"
       ]
     },
     {
@@ -41,7 +57,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
