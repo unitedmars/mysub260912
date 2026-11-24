@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: leviko-nl2962.shopingggg.ir
+  server: leviko-nl9472.shopingggg.ir
   port: 9543
   udp: true
   type: vless
