@@ -19,19 +19,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
 - name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  server: 144.31.131.73
-  port: 443
-  udp: true
-  type: vless
-  uuid: 534a0469-a507-4fec-b9a1-f648864e5da0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QQgfv5J_fvr_v7GrfflVOb9ZRvBf66qfRzGWS8EKxQw
-  servername: aura2.fastlaplegends.org
-  client-fingerprint: firefox
-- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  server: 154.47.19.225
+  server: leviko-at3530.shopingggg.ir
   port: 1270
   udp: true
   type: vmess
@@ -49,7 +37,6 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
   - 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +45,5 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
   - 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
 rules:
 - MATCH,PROXIES
