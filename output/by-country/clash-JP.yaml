@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  server: 149.22.87.240
+  server: 149.22.87.204
   port: 443
   udp: true
   type: ss
@@ -19,7 +19,7 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  server: 149.22.87.204
+  server: 149.22.87.240
   port: 443
   udp: true
   type: ss
@@ -39,6 +39,17 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
+  server: 161.33.20.255
+  port: 8880
+  udp: true
+  type: vmess
+  uuid: e0856508-d693-450a-a099-455091dc4f25
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /e0856508-d693-450a-a099-455091dc4f25-vm
+- name: 🇯🇵 日本 (Japan) 06 - xiaohe
   server: 168.138.43.75
   port: 80
   udp: true
@@ -49,19 +60,8 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  server: 168.110.63.247
-  port: 8081
-  udp: true
-  type: vmess
-  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vless
 - name: 🇯🇵 日本 (Japan) 07 - xiaohe
-  server: 104.19.12.94
+  server: 104.16.10.22
   port: 443
   udp: true
   type: vless
@@ -69,12 +69,32 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  server: 213.183.41.31
+  port: 8463
+  udp: true
+  type: vless
+  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
+  tls: true
+  servername: share.plumstatic.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🇯🇵 日本 (Japan) 09 - xiaohe
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +107,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 05 - xiaohe
   - 🇯🇵 日本 (Japan) 06 - xiaohe
   - 🇯🇵 日本 (Japan) 07 - xiaohe
+  - 🇯🇵 日本 (Japan) 08 - xiaohe
+  - 🇯🇵 日本 (Japan) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,5 +121,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 05 - xiaohe
   - 🇯🇵 日本 (Japan) 06 - xiaohe
   - 🇯🇵 日本 (Japan) 07 - xiaohe
+  - 🇯🇵 日本 (Japan) 08 - xiaohe
+  - 🇯🇵 日本 (Japan) 09 - xiaohe
 rules:
 - MATCH,PROXIES

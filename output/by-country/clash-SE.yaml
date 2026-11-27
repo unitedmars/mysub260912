@@ -23,19 +23,7 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: leviko-se4581.shopingggg.ir
-  port: 48115
-  udp: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  tls: true
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: leviko-se3307.shopingggg.ir
+  server: 62.93.166.184
   port: 1270
   udp: true
   type: vmess
@@ -45,17 +33,19 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: sw6.yndx-game.com
-  port: 443
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 138.124.86.230
+  port: 48115
   udp: true
   type: vless
-  uuid: eb83b44c-ad8c-4658-9923-313e59bb4d5e
-  flow: xtls-rprx-vision
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
   tls: true
-  servername: sw6.yndx-game.com
+  servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,7 +55,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,6 +64,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
 rules:
 - MATCH,PROXIES
