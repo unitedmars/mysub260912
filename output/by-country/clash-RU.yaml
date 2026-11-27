@@ -12,12 +12,15 @@ proxies:
   cipher: aes-256-gcm
   password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 185.22.152.168
-  port: 18443
+  server: 136.148.83.69
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  type: vless
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  tls: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 200.169.179.233
   port: 443
@@ -32,55 +35,46 @@ proxies:
   grpc-opts:
     grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 136.148.83.69
+  server: 201.51.12.98
   port: 443
   udp: true
   type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: vps3.nemnogogo.com
   skip-cert-verify: false
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 185.22.234.129
+  server: 201.51.12.98
   port: 443
   udp: true
   type: vless
-  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
-  servername: smartcdn.top
+  servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /useraction/collect/8a64b355ef0c/
-    headers:
-      Host: smartcdn.top
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: xssite.webredirect.org
+  server: 147.45.175.81
   port: 443
   udp: true
   type: vless
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   tls: true
-  servername: xssite.webredirect.org
+  servername: xsru2.freeddns.org
   skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: 79.182.70.232
-  port: 443
-  udp: true
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,7 +86,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,6 +97,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 rules:
 - MATCH,PROXIES
